@@ -1,9 +1,9 @@
 // Original code
 
-import { useRef } from 'react';
+import { useRef } from 'react'
 
 export default function Toggle() {
-  const isOnRef = useRef(false);
+  const isOnRef = useRef(false)
 
   return (
     <button onClick={() => {
@@ -16,11 +16,10 @@ export default function Toggle() {
 
 // Mine
 
-import { useRef, useState } from 'react'
+import { useState } from 'react'
 
 export default function Toggle() {
 	const [status, setStatus] = useState('off')
-	const isOnRef = useRef(false)
 
 	return (
 		<button
